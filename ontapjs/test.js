@@ -44,55 +44,55 @@ const showProduct = () => {
 showProduct();
 
 // Bài 2
-// const addProduct = () =>{
-//     let newProduct = prompt("Mời nhập sản phẩm mới");
-//     if(newProduct.length < 5){
-//        let newProduct =  prompt("Mời nhập lại");
-//        products.push(newProduct);
-//        console.log(products);
-//     }else if(newProduct.length >5 ){
-//         products.push(newProduct);
-//         console.log(products);
-//     }
+const addProduct = () =>{
+    let newProduct = prompt("Mời nhập sản phẩm mới");
+    if(newProduct.length < 5){
+       let newProduct =  prompt("Mời nhập lại");
+       products.push(newProduct);
+       console.log(products);
+    }else if(newProduct.length >5 ){
+        products.push(newProduct);
+        console.log(products);
+    }
 
-// }
+}
 
-// addProduct();
+addProduct();
 
 // Bài 3 
-// const removeProduct = (arr) =>{
-//     let deleteProduct = prompt("Nhập sản phẩm cần xóa");
-//     let index = products.indexOf(deleteProduct);
-//     if(index !== -1){
-//         arr.splice(index,1)
-//         console.log("Đã xóa "  + deleteProduct);
-//         console.log("Mảng mới là : " + products);
-//     }else{
-//             console.log("Không tìm thấy sản phẩm cần xóa : " +deleteProduct);
-//         }
+const removeProduct = (arr) =>{
+    let deleteProduct = prompt("Nhập sản phẩm cần xóa");
+    let index = products.indexOf(deleteProduct);
+    if(index !== -1){
+        arr.splice(index,1)
+        console.log("Đã xóa "  + deleteProduct);
+        console.log("Mảng mới là : " + products);
+    }else{
+            console.log("Không tìm thấy sản phẩm cần xóa : " +deleteProduct);
+        }
     
     
     
-// }
-// removeProduct(products)
+}
+removeProduct(products)
 
 // Bài 4
-// const updateProduct = () =>{
+const updateProduct = () =>{
 
-//     let nameProduct = prompt("Mời nhập tên sản phẩm")
-//     let index = products.indexOf(nameProduct);
+    let nameProduct = prompt("Mời nhập tên sản phẩm")
+    let index = products.indexOf(nameProduct);
 
-//     if(index !== -1){
-//     let nameUpdate = prompt("Cập nhật sản phẩm");
+    if(index !== -1){
+    let nameUpdate = prompt("Cập nhật sản phẩm");
 
-//         products[index] = nameUpdate;
-//         console.log(nameProduct +  " Vừa được cập nhật thành :  " + nameUpdate);
-//         console.log("Mảng mới là "  +products);
-//     }else{
-//         console.log("Không tìm thấy sản  phẩm ")
-//     }
-// }
-// updateProduct();
+        products[index] = nameUpdate;
+        console.log(nameProduct +  " Vừa được cập nhật thành :  " + nameUpdate);
+        console.log("Mảng mới là "  +products);
+    }else{
+        console.log("Không tìm thấy sản  phẩm ")
+    }
+}
+updateProduct();
 
 // Bài 5 
 const removeAllProduct = () =>{
